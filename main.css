@@ -6,7 +6,7 @@
 .main-nav{
     width: 100%;
     display: flex;
-    background-color: rgb(65, 62, 62);;
+    background-color: rgb(65, 62, 62);
     padding: 0 15px;
     box-sizing: border-box;
     z-index: 1;
@@ -136,11 +136,13 @@
     flex-direction: row;
     justify-content: center;
     padding: 10px;
+    background: linear-gradient(to bottom, #fcfff4 0%,#dfe5d7 40%,#b3bead 100%);
 }
 
 .section-about-me__text{
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
     margin-right: 5%;
-    width: 60%;
+    width: 65%;
     text-align: justify;
 }
 
@@ -148,6 +150,19 @@
     width: 40vw;
     max-width: 150px;
     max-height: 200px;
+}
+
+.section-contact{
+    background-color: rgb(65, 62, 62);
+    color: white;
+    padding: 5px 3vw;
+    display: flex;
+    justify-content: space-between;
+}
+
+.section-contact__social-media{
+    display: flex;
+    flex-direction: column;
 }
 
 @media only screen and (max-width: 767px) {
