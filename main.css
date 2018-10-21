@@ -6,7 +6,7 @@
 .main-nav{
     width: 100%;
     display: flex;
-    background-color: rgb(0,0,0);
+    background-color: rgb(65, 62, 62);;
     padding: 0 15px;
     box-sizing: border-box;
     z-index: 1;
@@ -36,16 +36,16 @@
 }
 
 .navigation__link:hover {
-    color: purple;
+    color: rgb(28, 101, 196);
 }
 
 .navigation__link:active {
-    color: gold;
+    color: rgb(16, 169, 180);
 }
 
 .navigation__element {
     list-style-type: none;
-    margin: 0 15px;
+    margin: 5px 15px;
     font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
     font-size: 24px;
 }
@@ -68,13 +68,27 @@
 }
 
 .section-hero-header{
-    color: white;
     font-size: 2em;
 }
 
 .section-hero-parahraph{
-    color: white;
     font-size: 1.7em;
+}
+
+.section-my-skills__technologies{
+    display: flex;
+    flex-basis: 33.3%;
+}
+
+.technologies__logo{
+    width: 15%;
+    height: auto;
+    max-width: 100px;
+    min-width: 30px;
+}
+
+.section-about-me__photo{
+    max-width: 10%;
 }
 
 @media only screen and (max-width: 767px) {
@@ -97,12 +111,17 @@
 
     .navigation__element {
         margin: 5px auto;
-        font-size: 20px;
+        font-size: 15px;
         font-weight: bold;
         letter-spacing: 0.1em;
         width: 100vw;
         text-align: center;
     }
+
+    .technologies__logo{
+        min-width: 30px;
+    }
+
 }
 
 @media only screen and (min-width: 768px) and (max-width: 991px) {
