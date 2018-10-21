@@ -45,14 +45,14 @@
 
 .navigation__element {
     list-style-type: none;
-    margin: 1vh 3vh;
+    padding: 1vh 3vh;
     font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
     font-size: 19px;
 }
 
 .section-hero{
     background-image: url('./img/keyboard.jpg');
-    height: 40vh;
+    height: 45vh;
     background-size: cover;
     background-repeat: no-repeat;
     width: 100%;
@@ -155,7 +155,7 @@
 .section-contact{
     background-color: rgb(65, 62, 62);
     color: white;
-    padding: 5px 3vw;
+    padding: 5px 2vw;
     display: flex;
     justify-content: space-between;
 }
@@ -166,27 +166,16 @@
 }
 
 @media only screen and (max-width: 767px) {
-    .main-nav {
-        flex-direction: column;
-        align-items: center;
-    }
-
-    .main-nav__logo {
-        justify-content: center;
-        max-height: 14vw;
-        margin-top: 8px;
-    }
 
     .navigation {
         flex-direction: column;
         align-items: center;
-        padding-left: 0;
     }
 
     .navigation__element {
-        margin: 5px auto;
         letter-spacing: 0.1em;
-        width: 100vw;
+        padding: 1vh 0;
+        width: 100%;
         text-align: center;
         font-size: 3vh;
     }
@@ -198,7 +187,7 @@
     .section-my-skills__technologies {
         flex-direction: column;
     }
-    
+
     .technologies__element {
         border-right: none;
         border-bottom: 1px solid black;
@@ -216,7 +205,7 @@
     .section-my-skills__languages {
         flex-direction: column;
     }
-    
+
     .languages__element {
         border-right: none;
         padding: 5px;
@@ -225,21 +214,16 @@
     .section-about-me {
         flex-direction: column;
         align-items: center;
+    }
+
+    .section-about-me__text{
+        width: 80%;
+        text-align: justify;
+        order: 1;
+    }
+
+    .section-about-me__photo{
+        width: 50vw;
+        max-width: 150px;
+    }
 }
-
-.section-about-me__text{
-    width: 80%;
-    text-align: justify;
-    order: 1;
-}
-
-.section-about-me__photo{
-    width: 50vw;
-    max-width: 150px;
-}
-
-@media only screen and (min-width: 768px) and (max-width: 991px) {
-
-}
-
-@media only screen and (min-width: 992px) and (max-width: 1199px) {
